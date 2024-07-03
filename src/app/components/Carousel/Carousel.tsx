@@ -79,7 +79,7 @@ export const Carousel = () => {
   useEffect(() => {
     goToSlice(currSlide);
     setMaxSlide(slides.length);
-  }, [slides, currSlide]); // posiciona los slides con al momento en el que se inicia el componente y se ejecuta el useEffect anterior, 
+  }, [slides, currSlide, goToSlice]); // posiciona los slides con al momento en el que se inicia el componente y se ejecuta el useEffect anterior, 
 
 
   return (
@@ -87,7 +87,9 @@ export const Carousel = () => {
       <div className={style.slider} ref={sliderRef}>
         
         {slides && cards.map((card, i) => (
-            <CarouselSlide cardData={card}/>
+            <div key={i}>
+              <CarouselSlide cardData={card}/>
+            </div>
           ))}
         <div className={style.slider__dots} ref={dotContainerRef}>
           {slides && slides.map((_, i) => (
