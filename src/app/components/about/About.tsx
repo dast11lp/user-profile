@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import profilePic from '../../../../public/imgs/profile.jpg';
-import styles from './about.module.css'
-
+import styles from './about.module.css';
 
 const About = () => {
     return (
@@ -17,7 +16,7 @@ const About = () => {
             </div>
             <div className={styles.about__content}>
                 <h2>About Me</h2>
-                <p className={styles.about__pg}>Hi, I'm John Doe, a web developer with a passion for creating amazing web experiences. like music like rock alternative, watch football matches, play videogames.</p>
+                <p className={styles.about__pg}>Hi, I&apos;m John Doe, a web developer with a passion for creating amazing web experiences. I like music, especially rock alternative, watching football matches, and playing video games.</p>
             </div>
         </section>
     );
