@@ -15,7 +15,7 @@
 
 
 .slider__btn {
-    
+
     width: 5rem;
     height: 5rem;
     bottom: 0;
@@ -28,15 +28,15 @@
     background-color: var(--color-secondary);
 
     top: 60%;
+    border-radius: 50%;
 }
 
 .slider__btn--left {
-    clip-path: polygon(43% 0, 25% 51%, 40% 100%, 23% 100%, 10% 49%, 28% 0);
+
     left: 4rem;
 }
 
 .slider__btn--right {
-    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 63% 100%, 84% 51%, 63% 0);
     right: 4rem;
 }
 
@@ -59,4 +59,46 @@
     height: 1rem;
     width: 3rem;
     margin: 0 3px;
+}
+
+@media (max-width: 1090px) {
+    .slider__btn {
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 718px) {
+    .slider__btn--left {
+        left: 24rem;
+    }
+
+    .slider__btn--right {
+        right: 24rem;
+    }
+
+    .slider__dots {
+        bottom: 120px;
+    }
+}
+
+@media (max-width: 650px) {
+    .slider__btn--left {
+        left: 14rem;
+    }
+
+    .slider__btn--right {
+        right: 14rem;
+    }
+
+}
+
+
+@media (max-width: 460px) {
+    .slider__btn--left {
+        left: 5rem;
+    }
+
+    .slider__btn--right {
+        right: 5rem;
+    }
 }

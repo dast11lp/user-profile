@@ -10,3 +10,10 @@
 
     transition: transform 1s;
 }
+
+
+@media (max-width: 720px) {
+    .slide {
+        height: auto;
+    }
+}

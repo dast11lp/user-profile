@@ -17,3 +17,10 @@
 .about__content {
     padding: 10px;
 }
+
+@media (max-width: 720px) {
+    .about {
+        position: relative;
+        top: auto;
+    }
+}

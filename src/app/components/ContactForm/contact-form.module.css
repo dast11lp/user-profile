@@ -1,46 +1,15 @@
 .contact {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), 
-    url(../../../../public/imgs/email.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%),
+        url(../../../../public/imgs/email.jpg);
     background-size: 100%;
     border-radius: 3px;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-
-    /* @include respond(tab-land) {
-        background-image: linear-gradient(105deg, 
-        rgba($color-white, .9) 0%,
-        rgba($color-white, .9) 65%,
-        transparent 65%) ,
-url(../img/nat-10.jpg);
-        background-size: cover;
-    } */
-
-    /* @include respond(tab-port) {
-        background-image: linear-gradient(to right,
-                rgba($color-white, .9) 0%,
-                rgba($color-white, .9) 100%),
-            url(../img/nat-10.jpg);
-    } */
-
-
 }
 
 .contact__form {
     width: 50%;
-
-    /* @include respond(tab-land) {
-        width: 65%;
-    }
-
-    @include respond(tab-port) {
-        width: 100%;
-    } */
 }
-
-
-/*  */
-
-
 
 .form__radio-button {
     height: 3rem;
@@ -86,11 +55,6 @@ url(../img/nat-10.jpg);
 .form__radio-group {
     width: 49%;
     display: inline-block;
-
-    /* @include respond(tab-port) {
-        width: 100%;
-        margin-bottom: 2rem;
-    } */
 }
 
 
@@ -110,18 +74,6 @@ url(../img/nat-10.jpg);
     transition: all .3s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .form__input {
     font-size: 1.5rem;
     font-family: inherit;
@@ -134,11 +86,6 @@ url(../img/nat-10.jpg);
     width: 90%;
     display: block;
     transition: all .3s;
-    /* 
-    @include respond(tab-port) {
-        width: 100%;
-    } */
-
 }
 
 
@@ -164,3 +111,14 @@ url(../img/nat-10.jpg);
 /* .form__input::-webkit-input-placeholder {
     color: #222;
 } */
+
+@media (max-width: 720px) {
+    .form__input {
+        width: 100%;
+    }
+
+    .contact__form {
+        width: 100%;
+        padding: 5px;
+    }
+}

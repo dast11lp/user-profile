@@ -27,3 +27,18 @@
     width: 91%;
     padding: 10px 30px;
 }
+
+@media (max-width: 720px) {
+    .form__input {
+        width: 100%;
+    }
+
+    .contact__form {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .textarea__textarea-box { 
+        width: 100%;
+     }
+}

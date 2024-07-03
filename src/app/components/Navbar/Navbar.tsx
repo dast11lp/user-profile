@@ -11,6 +11,7 @@ interface props {
 }
 
 
+
 export const Navbar: React.FC<props> = ({ links }) => {
     // const [OpenMenu, setOpenMenu] = useState(false);
 
