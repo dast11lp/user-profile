@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Perfil de Usuario - Página Web
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Descripción
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este proyecto es una página web de perfil de usuario que incluye información básica, una lista de intereses y una sección de contacto. La página está construida usando Next.js 14 y React, con estilos responsivos sin frameworks de CSS como Bootstrap.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Requisitos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Node.js (versión 14 o superior)
+- npm o yarn
 
-## Learn More
+## Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona el repositorio:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone https://github.com/dast11lp/user-profile.git
+    cd user-profile
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Instala las dependencias:
 
-## Deploy on Vercel
+    Usando npm:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Usando yarn:
+
+    ```bash
+    yarn install
+    ```
+
+## Uso
+
+1. Inicia el servidor de desarrollo:
+
+    Usando npm:
+
+    ```bash
+    npm run dev
+    ```
+
+    Usando yarn:
+
+    ```bash
+    yarn dev
+    ```
+
+2. Abre el navegador y ve a [http://localhost:3000](http://localhost:3000) para ver la página web. (en caso de que el puerto ya se encuentre ocupado, utilizará el siguiente, para esta seguros mirar la consola)
+
+## Scripts Disponibles
+
+En el directorio del proyecto, puedes ejecutar:
+
+- `npm run dev` o `yarn dev`: Inicia el servidor de desarrollo.
+- `npm run build` o `yarn build`: Compila la aplicación para producción.
+- `npm start` o `yarn start`: Inicia el servidor en modo producción.
+- `npm run lint` o `yarn lint`: Ejecuta linter para verificar el código.
+
+## Funcionalidades
+
+- **Cabecera:** Muestra el nombre del usuario y una imagen de perfil.
+- **Sección Sobre Mí:** Contiene una breve descripción del usuario.
+- **Lista de Intereses:** Muestra una lista de intereses del usuario.
+- **Formulario de Contacto:** Incluye campos para nombre, email y mensaje, con validación básica y mensaje de éxito al enviar.
