@@ -1,8 +1,10 @@
 .header__background {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to right bottom, var(--color-secondary), var(--color-secondary--dark)), url('../../../../public/imgs/back.png');
+    /* background: linear-gradient(to right bottom, var(--color-secondary), var(--color-secondary--dark)), url('../../../../public/imgs/back.png'); */
+    background-image: linear-gradient(to right bottom, rgba(255, 51, 102,0.8), rgba(186, 38, 93,0.8)),url('../../../../public/imgs/profile.jpg');
     background-size: cover;
+    background-position: center -192px;
 
     height: 23rem;
     width: 100%;

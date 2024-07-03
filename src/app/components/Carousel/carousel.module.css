@@ -32,7 +32,6 @@
 }
 
 .slider__btn--left {
-
     left: 4rem;
 }
 
@@ -63,7 +62,7 @@
 
 @media (max-width: 1090px) {
     .slider__btn {
-        bottom: 120px;
+        top: 360px;
     }
 }
 

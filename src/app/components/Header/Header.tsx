@@ -3,6 +3,10 @@ import style from './header.module.css'
 import { Navbar } from '../Navbar/Navbar';
 import About from '../about/About';
 
+import twiterImg from '../../../../public/icons/twitter.svg'
+import instagramImg from '../../../../public/icons/instagram.svg'
+import facebookImg from '../../../../public/icons/facebook.svg'
+
 const Header = () => {
 
   const links1 = [
@@ -17,14 +21,16 @@ const Header = () => {
     { name: 'Contacto', href: '/contact', icon: 'DocumentDuplicateIcon', },
   ];
 
+  const icons: any[] = [twiterImg, instagramImg, facebookImg]
+
   return (
     <header className={style.header__background}>
-      <Navbar links={null} />
+      <Navbar links={null} title='Profile' subtitle={null} img={false}/>
       <div className={style.header__content}>
         <div className={style.header__content__resume}>
           <About />
         </div>
-        <Navbar links={links2} />
+        <Navbar links={links2} title='Johana Doe' subtitle={'Ingeniera de sistemas'} img={true}/>
       </div>
     </header>
   );

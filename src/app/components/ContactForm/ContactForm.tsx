@@ -26,7 +26,7 @@ const ContactForm = () => {
                     </div>
 
                     <div className={style.form__group}>
-                        <button className="btn btn--green">Next step &rarr;</button>
+                        <input type='submit' className="btn btn--green">Send &rarr;</input>
                     </div>
                 </form>
             </div>

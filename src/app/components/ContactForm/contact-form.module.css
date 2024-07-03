@@ -42,7 +42,6 @@
 
 
 .form__radio-label {
-    /* font-size: $default-font-size; */
     cursor: pointer;
     position: relative;
     padding-left: 4.5rem;
@@ -107,10 +106,6 @@
 .form__radio-input:checked~&__radio-label &__radio-button::after {
     opacity: 1;
 }
-
-/* .form__input::-webkit-input-placeholder {
-    color: #222;
-} */
 
 @media (max-width: 720px) {
     .form__input {

@@ -15,18 +15,18 @@ import football from '../../../../public/imgs/back.png'
 
 export const Carousel = () => {
   const cards = [{
-    title: 'football',
-    paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut facere doloribus odio eos, sit, aliquid odit similique laborum eligendi, quasi tenetur necessitatibus!',
+    title: 'Football',
+    paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut',
     image: football
 },
 {
-    title: 'anime',
-    paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut facere doloribus odio eos, sit, aliquid odit similique laborum eligendi, quasi tenetur necessitatibus!',
+    title: 'Anime',
+    paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut',
     image: anime
 },
 {
-    title: 'development',
-    paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut facere doloribus odio eos, sit, aliquid odit similique laborum eligendi, quasi tenetur necessitatibus!',
+    title: 'Development',
+    paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut',
     image: development
 },]
 
