@@ -17,6 +17,8 @@
     margin: 0 5px;
 }
 
-@media (max-width: 720px) {
-    
+.active {
+    background-color: var(--color-secondary--dark--two);
+    padding: 5px;
+    border-radius: 4px;
 }
