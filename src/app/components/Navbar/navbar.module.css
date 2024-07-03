@@ -49,6 +49,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    padding: 0 5px;
 }
 
 .navbar__nav__right__user__menu {
@@ -87,6 +88,36 @@
     display: flex;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 525px) {
+    .navbar {
+        flex-direction: column;
+    }
 
+    .navbar__nav {
+        flex: 0 0 0;
+        flex-direction: column;
+    }
+
+    .navbar__nav__left {
+        flex: 1 1 3rem;
+
+        flex-direction: column;
+    }
+
+    .navbar__nav__right {
+        flex: 1 1 3rem;
+        margin: 10px 0;
+        justify-content: center;
+    }
+
+    .navbar__nav__left__brand__name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar__nav__left__brand {
+        flex: 1 1 5rem
+    }
 }

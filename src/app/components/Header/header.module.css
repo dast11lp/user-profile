@@ -28,7 +28,7 @@
     flex: 0 0 30rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
 
     .header__background {
         height: auto;

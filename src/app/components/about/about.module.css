@@ -18,7 +18,7 @@
     padding: 10px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
     .about {
         position: relative;
         top: auto;

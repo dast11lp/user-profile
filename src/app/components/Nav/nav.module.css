@@ -22,3 +22,9 @@
     padding: 5px;
     border-radius: 4px;
 }
+
+@media (max-width: 525px) {
+    .nav__left__navlinks {
+      margin: 10px 0;
+    }
+}

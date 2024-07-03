@@ -28,7 +28,7 @@
     padding: 10px 30px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
     .form__input {
         width: 100%;
     }
