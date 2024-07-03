@@ -12,6 +12,7 @@ const Header = () => {
   ];
 
   const links2 = [
+    { name: 'Info', href: '/', icon: 'DocumentDuplicateIcon', },
     { name: 'Intereses', href: '/interests', icon: 'HomeIcon' },
     { name: 'Contacto', href: '/contact', icon: 'DocumentDuplicateIcon', },
   ];
@@ -22,15 +23,9 @@ const Header = () => {
       <div className={style.header__content}>
         <div className={style.header__content__resume}>
           <About />
-          {/* <Image src={profilePic} alt="Profile Picture" width={50} height={50} /> */}
         </div>
-        {/* <div className={style.header__content__data}> */}
-        {/* <h1>Daniel López</h1>
-          <h2>Ingeniero de sistemas</h2> */}
-        <Navbar links={links2}/>
-        {/* </div> */}
+        <Navbar links={links2} />
       </div>
-
     </header>
   );
 };

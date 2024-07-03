@@ -145,12 +145,12 @@ url(../img/nat-10.jpg);
 
 .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem rgba(#000, .1);
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--color-secondary);
 }
 
 .form__input:focus:invalid {
-    border-bottom: 3px solid #222;
+    box-shadow: 0 1rem 2rem var(--color-secondary);
+    border-bottom: 3px solid #fff;
 }
 
 .form__group:not(:last-child) {

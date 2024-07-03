@@ -1,16 +1,3 @@
-/* :root {
-    --color-primary: #fff;
-    --color-secondary: #459ee6;
-    --color-tertiary: #131212;
-    --color-quaternary: #363434;
-    --color-quinary: rgba(0, 0, 0, 0.2);
-    --color-senary: rgba(220, 239, 255, 1);
-  
-    --color-shadow-primary: 0 5px 4px rgba(0, 0, 0, 0.2);
-  
-    --border-radius-primary: 4px;
-  } */
-
 .navbar {
     display: flex;
     align-items: end;
@@ -50,20 +37,7 @@
     font-weight: 700;
 }
 
-.navbar__nav__left__navlinks {
-    flex: 1 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.navbar__nav__left__navlinks__links {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    flex: 1 1 100%;
-    display: flex;
-}
 
 .navbar__nav__right {
     flex: 1 1;

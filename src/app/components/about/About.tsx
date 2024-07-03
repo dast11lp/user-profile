@@ -6,8 +6,14 @@ import styles from './about.module.css'
 const About = () => {
     return (
         <section className={styles.about}>
-            <div>
-                <Image src={profilePic} alt="Profile Picture" width={280} height={300} />
+            <div style={{ width: '280px', height: '420px', position: 'relative' }}>
+                <Image
+                    src={profilePic}
+                    alt="Profile Picture"
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="top"
+                />
             </div>
             <div className={styles.about__content}>
                 <h2>About Me</h2>
