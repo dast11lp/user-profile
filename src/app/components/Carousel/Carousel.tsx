@@ -39,19 +39,6 @@ export const Carousel = () => {
   const [maxSlide, setMaxSlide] = useState<number>(0);
   const [currSlide, setCurrSlide] = useState<number>(0);
 
-  useEffect(() => {
-    const sliderNode = sliderRef.current;
-    if (sliderNode) {
-      const slidesNode = sliderNode.querySelectorAll<HTMLElement>(".carousel-slide_slide__yWMl8");
-      setSlides(Array.from(slidesNode));
-    }
-  }, []);
-
-
-  useEffect(() => {
-    goToSlice(currSlide);
-    setMaxSlide(slides.length);
-  }, [slides, currSlide]); // posiciona los slides con al momento en el que se inicia el componente y se ejecuta el useEffect anterior, 
 
   const nextSlide = () => {
     if (currSlide === maxSlide - 1)
@@ -79,6 +66,21 @@ export const Carousel = () => {
     goToSlice(index);
     setCurrSlide(index);
   };
+
+  useEffect(() => {
+    const sliderNode = sliderRef.current;
+    if (sliderNode) {
+      const slidesNode = sliderNode.querySelectorAll<HTMLElement>(".carousel-slide_slide__yWMl8");
+      setSlides(Array.from(slidesNode));
+    }
+  }, []);
+
+
+  useEffect(() => {
+    goToSlice(currSlide);
+    setMaxSlide(slides.length);
+  }, [slides, currSlide]); // posiciona los slides con al momento en el que se inicia el componente y se ejecuta el useEffect anterior, 
+
 
   return (
     <div className={style.carousel}>
