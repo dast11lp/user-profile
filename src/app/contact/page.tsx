@@ -1,11 +1,10 @@
+import ContactForm from "../components/ContactForm/ContactForm"
 
 
 const page = () => {
-  return (
-    <div>
-      <h1>Contactame pendejo</h1>
-    </div>
-  )
+    return (
+        <ContactForm />
+    )
 }
 
 export default page

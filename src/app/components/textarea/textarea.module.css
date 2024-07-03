@@ -1,0 +1,29 @@
+.textarea {
+    font-family: "Quicksand", sans-serif;
+    outline: none;
+    position: relative;
+}
+
+.textarea:focus {
+    /* outline: 2px solid #dd7907; */
+}
+
+
+.textarea__label {
+    position: absolute;
+    color: var(--color-quaternary);
+    top: 39%;
+    left: 4rem;
+    transition: all 0.2s ease-in;
+    user-select: none;
+    pointer-events: none;
+}
+
+.textarea__textarea-box {
+    border: 0 solid var(--color-quaternary);
+    outline: none;
+    border-radius: 12px;
+    height: 140px;
+    width: 91%;
+    padding: 10px 30px;
+}
