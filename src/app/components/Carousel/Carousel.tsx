@@ -18,17 +18,17 @@ export const Carousel = () => {
     title: 'Football',
     paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut',
     image: football
-},
-{
+  },
+  {
     title: 'Anime',
     paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut',
     image: anime
-},
-{
+  },
+  {
     title: 'Development',
     paragraph: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae magnam et dolore iusto reprehenderit distinctio nemo aut',
     image: development
-},]
+  },]
 
 
 
@@ -83,14 +83,12 @@ export const Carousel = () => {
 
 
   return (
-    <div className={style.carousel}>
+    // <div className={style.carousel}>
       <div className={style.slider} ref={sliderRef}>
-        
+
         {slides && cards.map((card, i) => (
-            <div key={i}>
-              <CarouselSlide cardData={card}/>
-            </div>
-          ))}
+          <CarouselSlide key={i} cardData={card} />
+        ))}
         <div className={style.slider__dots} ref={dotContainerRef}>
           {slides && slides.map((_, i) => (
             <button
@@ -105,13 +103,13 @@ export const Carousel = () => {
         </div>
 
         <button className={`${style["slider__btn"]} ${style["slider__btn--left"]}`} onClick={prevSlide}>
-          <Image src={previous} width={30} alt="Previous"/>
+          <Image src={previous} width={30} alt="Previous" />
         </button>
 
         <button className={`${style["slider__btn"]} ${style["slider__btn--right"]}`} onClick={nextSlide}>
-          <Image src={next} width={30} alt="next"/>
+          <Image src={next} width={30} alt="next" />
         </button>
       </div>
-    </div>
+    // </div>
   );
 };

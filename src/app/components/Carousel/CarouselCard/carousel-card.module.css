@@ -33,3 +33,10 @@
     object-fit: cover;
 
 }
+
+@media (max-width:460px) {
+    .card-carousel__content {
+        text-align: center;
+        padding: 1rem;
+    }
+}
