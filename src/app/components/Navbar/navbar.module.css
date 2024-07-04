@@ -118,6 +118,7 @@
     }
 
     .navbar__nav__left__brand {
-        flex: 1 1 5rem
+        flex: 1 1 5rem;
+        margin: 0;
     }
 }

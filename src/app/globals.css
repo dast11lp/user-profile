@@ -37,7 +37,7 @@ body {
 
   grid-template-columns: 35rem 1fr;
   justify-items: center;
-  padding: 50px;
+  padding: 5rem;
 }
 
 .layout__content__child {
@@ -155,12 +155,8 @@ body {
 @media (max-width: 780px) {
   .layout__content {
     display: flex;
+    padding: 5rem 0;
   }
 }
 
 
-@media (max-width: 600px) {
-  html {
-    font-size: 50%;
-  }
-}
