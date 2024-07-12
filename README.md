@@ -58,8 +58,6 @@ En el directorio del proyecto, puedes ejecutar:
 
 - `npm run dev` o `yarn dev`: Inicia el servidor de desarrollo.
 - `npm run build` o `yarn build`: Compila la aplicación para producción.
-- `npm start` o `yarn start`: Inicia el servidor en modo producción.
-- `npm run lint` o `yarn lint`: Ejecuta linter para verificar el código.
 
 ## Funcionalidades
 
